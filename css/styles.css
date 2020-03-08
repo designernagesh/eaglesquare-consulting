@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: 'RobotoSlab';
+	src: url('../fonts/RobotoSlab.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/RobotoSlab.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/RobotoSlab.woff') format('woff'), /* Modern Browsers */ url('../fonts/RobotoSlab.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/RobotoSlab.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-weight: normal;
+	font-style: normal;
+}
+body{margin:0; padding:0; color:#4D4D4F; font: normal 16px/24px "RobotoSlab", sans-serif;}
+h1, h2, h3, p, ul, li, dl, dt{ margin:0; padding:0;}
+h1, h2, h3, dt{font-family: "RobotoSlab", sans-serif;}
+
+.wrapper{ border-top:7px solid #055192;}
+/****************** HEADER ******************/
+header{}
+.header-wrapper{ width:980px; height:110px; margin:0 auto; }
+.logo{float:left; margin-top:14px;}
+.phone{padding:30px 0 0;}
+.phone span {
+    color: #666;
+    display: block; text-align:right;
+    font: normal 22px "RobotoSlab", sans-serif; line-height:15px;
+}
+.phone address {
+    color: #ffa200;  text-align:right;
+    display: block;
+    font: normal 32px "RobotoSlab", sans-serif;
+    margin-bottom: 9px;
+}
+
+/*--navigation CSS--*/
+nav{height:60px; background:url(../images/menu_bg.png) repeat-x top left;}
+.navigation {width:980px; margin:0px auto; overflow:hidden; height:60px}
+nav li {height:60px; display:inline; float:left; line-height:60px;}
+nav li:after{content:url(../images/menu_partition.png);}
+nav li:last-child:after{content:""}
+nav li a{float:left; text-decoration:none; color:#FFF; padding:0 28px; height:60px; font-size:16px; text-transform:uppercase;}
+nav li a.home{background:url(../images/home-icon-normal.png) center center no-repeat; width:32px;}
+nav li a.home:hover {background:#FFF url(../images/home-icon-active.png) center center no-repeat;}
+nav li a.home .active {background:#FFF url(../images/home-icon-active.png) center center no-repeat;}
+nav li a img {margin:14px 0 0}
+nav li a:hover {background:#FFF; color:#003068;}
+nav li a.active{background: #FFF; color:#055192}
+
+
+/*--banner CSS--*/
+.banner{background:#024689 url(../images/banner_bg.png) no-repeat top center; height:350px; padding:25px 0px;}
+.banner-wrapper{width:980px; margin:0px auto;}
+
+/*--content CSS--*/
+.welcome {padding:20px 0px; background:#ededee;}
+.welcome h1{color:#055192; text-align:center; font-weight:normal; font-size:32px; margin-bottom:10px;}
+.welcome p {text-align:center; font-size:18px;}
+
+.home-content{width:980px; margin:25px auto;}
+section.boxes {margin:0 auto 30px; overflow:hidden;}
+section.boxes img{border-bottom:5px solid #ffa200;}
+section.boxes li{display:inline-block; float:left; width:296px; border:2px solid #055192; margin-right:40px;}
+section.boxes li:last-child{ margin-right:0px}
+section.boxes h2{color:#055192; padding:10px 20px; font-size:24px; font-weight:normal;}
+section.boxes p{padding:0 20px 10px; font-size:14px; line-height:20px;}
+section.boxes a {text-transform:uppercase; padding:0 0 10px 20px; float:left; text-decoration:none; font-size:14px; color:#055192;}
+section.boxes a:hover {color:#ffa200;}
+
+section.home-left{width:700px; float:left; margin-right:50px}
+section.home-left li {float:left; margin-bottom:20px; list-style:none;}
+section.home-left img{border-bottom:5px solid #ffa200; margin-right:18px; float:left;}
+section.home-left div{float:right; width:470px;}
+section.home-left h2{color:#055192; font-size:24px; font-weight:normal;}
+section.home-left h3{font-size:18px; font-weight:normal; color: #999; margin-bottom:10px;}
+section.home-left p{padding:0 0 10px; font-size:14px; line-height:20px;}
+
+aside.home-right{width:230px; float:left;}
+aside.home-right dt {color:#055192; font-size:24px; font-weight:normal; margin-bottom:15px}
+aside.home-right dd {padding:0 0 0 15px; font-size:14px; margin:0 0 6px 0; background:url(../images/arrow.png) 0 10px no-repeat;}
+
+.right-list li{ padding-left:20px; position:relative;}
+.right-list h3{color:#055192;}
+.right-list li:first-child{padding:0;}
+.right-list li:before{
+	top:7px;
+    left: 0px;
+    content: url(../images/arrow.png); 
+	position: absolute;	
+    z-index: 0;	}
+.right-list li:first-child:before{ content:""}		
+.clear{clear:both;}	
+
+/*************************************
+Innerpage CSS
+*************************************/
+.inner-banner{background:#024689 url(../images/inner-page-bg.jpg) no-repeat top center; height:175px;}
+.inner-banner-wrapper {height:150px; width:980px; margin:0 auto; padding:12px 0px;}
+.inner-content{width:980px; margin:25px auto;}
+.inner-content h2, .inner-content h3 {color:#055192; margin-bottom:10px;}
+.inner-content p {margin-bottom:20px;}
+.inner-content ul {margin-bottom:10px;}
+.inner-content li {list-style:disc; margin:0 0 5px 15px;}
+.inner-content strong {color:#055192;}
+.inner-content a {color:#055192;}
+.inner-content a:hover {text-decoration:none}
+ 
+ .contact .contact-form {width:300px; float:left;}
+.contact-form input[type="text"], .contact-form textarea {background-color: whitesmoke; padding:10px; margin-bottom:10px; box-sizing:border-box; border: 1px solid #c5c5c5;    min-height: 30px;    width: 100%;}
+.contact-form textarea {height:200px; font-family:"SEGOEUI"; font-size:14px;}
+.contact-form input[type="submit"] {background-color: #bd1d2c;    color: #fff;    border:0px;	cursor:pointer;    color: #fff;
+    font-weight: bold;    outline: medium none !important;    padding: 8px 18px;    transition: all 0.3s ease 0s; margin:0px 0px 30px;}
+.contact-form input[type="submit"]:hover {background: #666666;}
+label.error {margin-top: 0px;}
+address {line-height: 20px;	font-style: normal;  margin-bottom: 20px; font-size:16px;}
+.contact .left-side {float:left;width:600px; margin-right:50px} 
+.contact h2 { color:#666666} 
+
+/****************************** 
+Thankyou Page CSS Starts Here 
+*/
+.thanku{ min-height:300px}
+.info{text-align:center; margin-top:30px}
+.info span {font-size:32px; margin-bottom:30px; display:block}
+
+/*************************************
+Footer CSS
+*************************************/ 
+footer{background:#014488 url(../images/footer-bg.png) no-repeat center top; padding:30px 0; color:#FFF; font-family:Arial, Helvetica, sans-serif; font-size:14px;}
+footer a {text-decoration:none; color:#FFF;}
+footer a:hover {text-decoration: underline;}
+.footer-wrapper{width:980px; margin:0 auto; overflow:hidden;}
+footer h3 {font-weight:normal; margin-bottom:10px; font-size:18px;}
+footer .left{float:left;}
+footer .right{float:right; line-height:20px;}
+footer .center {margin: 0 auto; width:230px;}
+.copyright{font-size:13px;}
+
+ul.address li { float:left; width:300px; color:#FFF;}
+ul.social-icon{margin-bottom:10px; overflow:hidden;}
+ul.social-icon li{list-style:none; width:36px; height:36px; display:inline; float:left; margin-right:5px;}
+ul.social-icon li a {background-image:url(../images/social-icons.png); background-repeat:no-repeat; width:36px; height:36px; display:block}
+ul.social-icon li a.facebook{background-position:0px 0px;}
+ul.social-icon li a.facebook:hover{background-position:0px -36px;}
+ul.social-icon li a.twitter{background-position:-43px 0px;}
+ul.social-icon li a.twitter:hover{background-position:-43px -36px;}
+ul.social-icon li a.linkedin{background-position:-87px 0px;}
+ul.social-icon li a.linkedin:hover{background-position:-87px -36px;}
+ul.social-icon li a.google-plus{background-position:-130px 0px;}
+ul.social-icon li a.google-plus:hover{background-position:-130px -36px;}
+ul.social-icon li a.youtube{background-position:-175px 0px;}
+ul.social-icon li a.youtube:hover{background-position:-175px -36px;}
+
+	
+
